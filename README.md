@@ -1,8 +1,12 @@
 # 11/10/2022
-## Today's progress
+## Today's progress:
 List and Dictionaries comprehensions
+
 Scope
+
 Lambda
+
 PROJECT: Rock Paper Sissors.
-## Issues or Blockers
+## Issues or Blockers:
 None
+# 11/11/2022
