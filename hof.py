@@ -1,21 +1,28 @@
-def increment(x):
-  return x + 1
+def sum_one(x):
+    return x + 1
 
-increment_v2 = lambda x: x +1
 
 def high_ord_func(x, func):
-  return x + func(x)
+    return x + func(x)
 
-high_ord_func_v2 = lambda x, func: x + func(x)
 
-result = high_ord_func(2, increment)
-# 2 + (2 + 1)
+result = high_ord_func(2, sum_one)
+# result = 2 + (2 + 1)
 print(result)
 
-result = high_ord_func_v2(2, increment_v2)
+
+# HOF whit Lambda
+def sum_three(x): return x + 3
+
+
+def hof_lambda(x, func): return x + func(x)
+
+
+result = hof_lambda(3, sum_three)
+# result = 3 + (3 + 3)
 print(result)
-result = high_ord_func_v2(2, lambda x: x + 2)
+
+# HOF whit integrated Lambda
+result = hof_lambda(5, lambda x: x * 5)
 print(result)
-## change
-result = high_ord_func_v2(2, lambda x: x * 5)
-print(result)
+# result = 5 + (5 * 5)
